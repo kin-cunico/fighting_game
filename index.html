@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+		</style>
+		<title>Document</title>
+	</head>
+	<body>
+		<main style="position: relative; display: inline-block">
+			<!-- bars -->
+			<div
+				style="
+					position: absolute;
+					display: flex;
+					width: 100%;
+					align-items: center;
+					gap: 5px;
+					padding: 20px;
+				"
+			>
+				<!-- p1 healthbar -->
+				<div
+					style="
+						position: relative;
+						height: 30px;
+						width: 100%;
+						display: flex;
+						justify-content: flex-end;
+					"
+				>
+					<div
+						style="
+							background-color: rgb(146, 61, 61);
+							height: 30px;
+							border-radius: 8px;
+							width: 100%;
+						"
+					></div>
+					<div
+						style="
+							position: absolute;
+							background-color: blue;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							border-radius: 8px;
+							width: 100%;
+						"
+						id="p1Health"
+					></div>
+				</div>
+				<!-- timer -->
+				<div
+					style="
+						background-color: red;
+						width: 100px;
+						height: 100px;
+						flex-shrink: 0;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					"
+					id="timer"
+				>
+					10
+				</div>
+				<!-- p2 healthbar -->
+				<div style="position: relative; height: 30px; width: 100%">
+					<div
+						style="
+							background-color: rgb(146, 61, 61);
+							height: 30px;
+							border-radius: 8px;
+						"
+					></div>
+					<div
+						style="
+							position: absolute;
+							background-color: blue;
+							top: 0;
+							right: 0;
+							left: 0;
+							bottom: 0;
+							border-radius: 8px;
+						"
+						id="p2Health"
+					></div>
+				</div>
+			</div>
+			<div
+				style="
+					position: absolute;
+					color: white;
+					align-items: center;
+					justify-content: center;
+					top: 0;
+					right: 0;
+					left: 0;
+					bottom: 0;
+					display: none;
+				"
+				id="result"
+			></div>
+			<canvas></canvas>
+		</main>
+		<script src="index.js"></script>
+	</body>
+</html>
